@@ -14,6 +14,7 @@ import javax.annotation.Nullable;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
+import android.util.Log;
 
 import android.graphics.Bitmap;
 import android.os.Build;
@@ -194,11 +195,15 @@ public class ReactWebViewManager extends SimpleViewManager<WebView> {
     @Override
     public void onHostResume() {
       // do nothing
+      Log.i("AAAAAA","onHostResume");
+      this.onResume();
     }
 
     @Override
     public void onHostPause() {
       // do nothing
+      Log.i("AAAAAA","onHostPause");
+      this.onPause();
     }
 
     @Override
